@@ -6,11 +6,14 @@
   "scripts": {
     "lint": "eslint index.js test/*.js",
     "test": "istanbul cover tape test/*.js | tap-spec",
+    "win-test": "tape test/*.js",
+    "bithound": "bithound check git@github.com:alexindigo/stripbom.git",
     "debug": "tape test/*.js | tap-spec"
   },
   "pre-commit": [
     "lint",
-    "test"
+    "test",
+    "bithound"
   ],
   "engines": {
     "node": ">= 0.10"
@@ -42,6 +45,7 @@
     "0.12"
   ],
   "devDependencies": {
+    "bithound": "^1.7.0",
     "coveralls": "^2.11.12",
     "eslint": "^2.13.1",
     "istanbul": "^0.4.4",
