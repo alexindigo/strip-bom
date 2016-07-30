@@ -31,7 +31,7 @@ $ npm install --save stripbom
 ## Usage
 
 ```js
-const stripBom = require('strip-bom');
+const stripBom = require('stripbom');
 
 stripBom('\uFEFFunicorn');
 //=> 'unicorn'

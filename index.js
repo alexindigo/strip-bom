@@ -1,5 +1,6 @@
-// Latest version of npmjs.com/strip-bom doesn't support node below v4,
-// and previous version has security issues, so just keep it in-house
+// Starting version 3.x of npmjs.com/strip-bom doesn't support node below v4,
+// and previous versions have security issues, so this brings all the happiness
+// to those who are still in supporting older versions of node business
 module.exports = stripBOM;
 
 /**
